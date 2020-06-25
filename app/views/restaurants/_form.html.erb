@@ -1,0 +1,19 @@
+<div>
+  <%= simple_form_for(@restaurant) do |f| %>
+    <div>
+      <%= f.label :name %> <br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="content-block">
+      <%= f.label :address%><br>
+      <%= f.text_area :address %>
+    </div>
+       <div class="content-block">
+      <%= f.label :category%><br>
+      <%= f.text_field :category %>
+    </div>
+    <div class="button">
+      <%= f.submit %>
+    <div>
+  <% end %>
+</div>
